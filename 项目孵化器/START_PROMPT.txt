@@ -1,0 +1,14 @@
+请依据我提供的 Personal Project Incubator Pack（01–06 六份 Markdown）孵化当前项目。先完整理解相关规范，逐轮讨论必要的高价值决策；提出有依据的改进方案，区分用户已确认目标与推荐候选。**先给我完整的孵化预览与拟交付文件清单，得到我明确批准后才生成最终 PROJECT_BOOTSTRAP ZIP。**
+
+模式：New Project / Upgrade Existing Project / Research or Competition（可直接描述，无需专门选择）
+
+项目设想、实际问题或当前仓库：
+<在这里填写>
+
+已有资料与限制（如有）：
+<可提供 GitHub、代码、竞赛规则、需求、目标、实验结果等>
+
+我最看重的项目价值或成功标准（可选）：
+<在这里填写>
+
+不要凭空假定仓库事实、技术可行性或现有功能已经被验证。默认我的开发流程是 ChatGPT Planner + Codex Desktop，常规 Codex 任务优先低额度模型，并尽量保持 GitHub 远端同步。
