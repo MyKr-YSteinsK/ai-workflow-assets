@@ -10,4 +10,6 @@ Long-term home for reusable AI workflow instructions, project bootstrap material
 - `GPT自定义信息/` — ChatGPT customization text.
 - `skills/` — reusable skills and their supporting references.
 
-The ZIP bundles are retained alongside their editable source files for convenient distribution.
+## Upload bundle maintenance
+
+`项目孵化器/项目孵化器.zip` and `学习项目孵化器/学习项目孵化器.zip` are upload-ready packages for attaching to GPT conversations when starting a task. Keep them alongside their editable source files. Whenever a file included in a bundle changes, regenerate the corresponding ZIP in the same change and verify that every bundled file matches its current source before committing.
