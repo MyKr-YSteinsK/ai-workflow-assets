@@ -1,0 +1,4 @@
+# Keep bundle sources byte-stable across Git checkouts.
+项目孵化器/*.md text eol=lf
+学习项目孵化器/*.md text eol=lf
+*.zip binary

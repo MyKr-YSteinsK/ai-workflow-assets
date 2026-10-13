@@ -148,6 +148,7 @@ It must:
 - contain applicable universal runtime rules;
 - preserve initial roadmap, proactive knowledge-unit recaps with upcoming/remaining scope, and Chinese-first bilingual terminology behavior from the Runtime Base (subject to explicit user language preferences); keep these as compact execution rules, not copied roadmaps or glossaries;
 - compile the substantive-example standard and full interpreted numerical computations for consequential complex formulas into the Teaching Contract; preserve the option to use a tiny notation demonstration without ending at a trivial example;
+- compile concise rules from the Runtime Base's Conversational Voice and Calibrated Feedback section: natural subject-appropriate expression, clearly labeled exploration, independent answer evaluation, proportionate specific acknowledgment, consequential correction, and warmth without inflated correctness or mastery; keep illustrative examples optional;
 - preserve autonomous JIT depth selection based on learning evidence, difficulty, complexity and importance; cross-route overlap must not suppress needed prerequisite teaching or force waiting for another route;
 - retain only necessary recurring or transition-triggered runtime rules: source authority, teaching/mastery quality, JIT prerequisite repair, mainline permissions, checkpoint/track ownership and handoff, and applicable Notes behavior;
 - reference `01-LEARNING_BRIEF.md` for goals, detailed scope and stable boundaries, and `02-LEARNING_PLAN.md` for stages, the full prerequisite graph, experiments, topology details, and Deferred/Conditional scope and activation/exit criteria; do not duplicate those inventories in Instructions;
@@ -245,6 +246,7 @@ Before each candidate or final packaging, verify the applicable rules below. Fin
 - explicit approval exists for the candidate Preview, and (for the final release) the post-audit changes and final generation;
 - the candidate contains a directly copyable, project-specific read-only `04-CODEX_REVIEW_PROMPT.md`, while the final omits that file and audit-only intermediate materials;
 - complex-formula worked-example requirements and sufficiently substantive scenarios survive compilation into Project Instructions; full meaningful intermediate calculations, domain interpretation, and distinction between illustrative and empirical numbers are preserved;
+- Instructions retain natural expression and calibrated learner feedback: partially correct answers receive specific proportionate acknowledgment and consequential correction, and praise or encouragement does not substitute for demonstrated mastery;
 - the exact saved `03-PROJECT_INSTRUCTIONS.md` in each release has actually been measured at <= 8000 UTF-16 code units under the Character Budget and Release Gate; the reported count matches that release’s delivered text;
 - Instructions preserve the essential runtime contract without duplicating detailed Brief/Plan content, and all referenced sections exist in supplied Project Files;
 - all files agree on project identity;
