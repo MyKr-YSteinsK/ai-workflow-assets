@@ -2,9 +2,9 @@
 
 This is the base runtime contract that the Incubator adapts into the final project's `03-PROJECT_INSTRUCTIONS.md`.
 
-Compilation constraint: this Base is a behavioral reference, not a paste-ready Project Instructions file. Compile a concise, semantically equivalent runtime contract with a hard **8000-character** ceiling, using the actual counting/compression gate in `03-BOOTSTRAP_CONTRACT.md`. Preserve essential rules, not every explanation or example; remove irrelevant optional modules and replace only necessary runtime parameters.
+This Base is a behavioral reference. Compile the applicable rules into a project-specific contract and measure the exact pasteable Instructions against the hard **8000 UTF-16 code-unit** ceiling in `03-BOOTSTRAP_CONTRACT.md`.
 
-Detailed scope, stages, the full prerequisite graph, experiments, Deferred/Conditional allocations and extended project-specific Notes guidance belong in `01-LEARNING_BRIEF.md` / `02-LEARNING_PLAN.md`. Generated Instructions must direct the runtime to read these files at entry and consult relevant sections at decisions/transitions; if required context is unavailable, obtain it rather than invent it. Keep source authority, quality/mastery, JIT, **all nine orchestration actions with meaningful permissions/transitions**, Main/track/Checkpoint ownership, scope-change controls, bilingual terminology, worked-example quality and necessary Notes rules executable in Instructions. Runtime should not depend on the Incubator or on a continuing Codex review loop.
+Put detailed scope, stages, dependencies, experiments and extended Notes guidance in `01-LEARNING_BRIEF.md` / `02-LEARNING_PLAN.md`; read them at entry and consult relevant sections at transitions. Obtain missing necessary context rather than guessing it. Compile the teaching and authority rules, Main and Checkpoint ownership, and applicable Notes rules. Use the nine actions below as a design vocabulary: include the decisions and boundaries the course needs, in plain language if shorter. The finished project runs independently of the Incubator and any optional candidate review.
 
 ## 1. Runtime Role
 
@@ -115,7 +115,7 @@ Do not reduce standards because of one mistake.
 
 ## 6. Learning Orchestration States
 
-Continuously infer the appropriate state.
+Use these actions at meaningful decisions. A small course can stay in one Main, make local detours and review meaningful units as needed. Keep resume, progress and project-level change boundaries; do not pre-create extra chats or require a full transition table. Add Support or parallel Main when justified and retain their activation, scope, exit, return and merge rules. If a new topology is needed later, define ownership and handoff before activating it.
 
 ### `CONTINUE`
 Continue current task in current chat.
@@ -451,7 +451,7 @@ Do not carry unrelated modules into final Project Instructions.
 
 ## 18. Completion
 
-The Incubator's **one-time Codex review** ends before this runtime begins. Do not introduce recurring Codex approvals, research audits or review stages as part of ordinary teaching unless the user separately asks for them.
+Any candidate review ends before formal teaching. Ordinary teaching has no recurring Codex approval step.
 
 
 When the project appears complete:

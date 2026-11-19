@@ -22,6 +22,25 @@ The engineering ZIP contains source files `01`–`06`; the learning ZIP contains
 
 The [engineering incubator](项目孵化器/01-INCUBATOR_INSTRUCTIONS.md) supports GPT Project Main, direct Codex work and a light Codex Hub for coordinating several Plans. Follow the [bootstrap contract](项目孵化器/03-BOOTSTRAP_CONTRACT.md) to land project-specific sources in the target project’s `docs/` and point its root `AGENTS.md` there. Users manually sync selected versions to GPT Project and keep formal task Plans outside the target repo. Existing projects retain their active contracts until an upgrade is authorized.
 
+## Learning project setup
+
+Upload the learning ZIP and copy the [startup prompt](学习项目孵化器/05-START_PROMPT.md) separately. Approve the Preview for direct delivery, or choose one focused read-only Codex review when it would change a consequential design decision. Apply the final files using `00-START_HERE.md`. For an existing course, replace only approved files and instructions; keep its latest valid Checkpoint, active tracks and note names. See the [learning Bootstrap contract](学习项目孵化器/03-BOOTSTRAP_CONTRACT.md).
+
+## GPT Project Skill routing
+
+[MyKr-YSteinsK/ai-workflow-assets](https://github.com/MyKr-YSteinsK/ai-workflow-assets) is the source of record. Codex uses the same Skill files through its native installation paths; a GPT chat reading the files uses them as reference. Use a native Skill or plugin only if that capability is actually available. A script needs a real execution tool and task authorization.
+
+| Task | Read on demand |
+| --- | --- |
+| Create, revise or review a substantive technical document, report or paper | [`skills/document-writing/SKILL.md`](skills/document-writing/SKILL.md) |
+| Review or improve personal notes on material already studied | [`skills/study-review-notes/SKILL.md`](skills/study-review-notes/SKILL.md), with the course's sources, naming and existing Q&A rules |
+
+Paste or adapt this short route in a Project's instructions if the work recurs. Omit the unused branch:
+
+> 专业文档实质编写、修订或审查时，按需读取 `MyKr-YSteinsK/ai-workflow-assets` 的 `skills/document-writing/SKILL.md`；复盘已学个人笔记优先读 `skills/study-review-notes/SKILL.md`，并采用本课程的来源、命名与问答约定。当前对话能访问 GitHub 时读取正文，必要时再读关联 Reference，并核对实际读取的路径、版本（可见时）和一条适用规则。读不到时改用 Project 中标明原路径与版本的上传快照；仍不可得时说明缺口，依据实际任务和可读材料继续。普通问答、正在进行的教学和常规代码修复直接处理。
+
+GitHub access varies by account, workspace and chat surface. A link or search result alone does not confirm that the body was read. For repeatable results, use a commit-pinned file or a labeled snapshot. When updating manually, copy the exact Skill text and only the referenced files needed; upload them with distinct names (e.g. `document-writing.SKILL.md`) and record the original path and commit in the Project setup or source description. Replace stale snapshots yourself. [Project instructions override global custom instructions](https://help.openai.com/en/articles/10169521-projects-in-chatgpt) inside that Project; neither instructions nor uploads update when this repository changes. See [GitHub access in ChatGPT](https://help.openai.com/en/articles/11145903-connecting-github-to-chatgpt) and [native Skills](https://developers.openai.com/plugins/build/skills).
+
 ## ChatGPT customization
 
 `GPT自定义信息/GPT网页版-ChatGPT 自定义指令.txt` defines the default conversational style and judgment principles. `GPT自定义信息/GPT网页版-关于你的更多信息.txt` supplies personal interests and feedback preferences. Copy each file's complete content into the corresponding ChatGPT personalization field to apply an update. Repository changes prepare the text; applying it in ChatGPT is a separate step.
