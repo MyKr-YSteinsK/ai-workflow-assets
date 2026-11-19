@@ -13,6 +13,7 @@ description: 用于软件实现、bug/refactor/测试修复、repository bootstr
 
 - 已建档的 canonical 环境优先复用，包括新工作树；核对依赖锁与命令语义，避免裸 `uv` 或包管理器隐式同步或新建第二套环境。GPU 占用、磁盘、后台作业等按本次任务增量核实。运行前确认工作目录及默认输出、临时位置和实际写入边界。
 - 新项目接入、恢复入口或环境档案有缺口时，按需查 [仓库接入参考](references/repository-bootstrap-contracts.md)。正式交接、Hub 或旧回执兼容确需细节时，查 [任务交接参考](references/handoff-contracts.md)；普通任务无需读取。
+- 实际启动、接管或续跑预计耗时较长的实验，或验证中断恢复时，按需查 [实验运行与续跑](references/experiment-run-recovery.md)。普通快速检查与方案讨论无需加载。
 - ChatGPT Project 附件、资产候选文件和未来路径不自动构成本地规则。必要内容需实际可读或由任务自足提供；缺权限或验收依据时说明影响，暂停依赖缺口的动作。
 
 ## 2. 连续执行与任务协调
