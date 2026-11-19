@@ -16,6 +16,12 @@ Long-term home for reusable AI workflow instructions, project bootstrap material
 
 Bundle source Markdown uses LF line endings through `.gitattributes` so Git checkouts preserve the bytes used for ZIP comparison.
 
+The engineering ZIP contains source files `01`–`06`; the learning ZIP contains `01`–`04`. Copy the corresponding startup prompt separately; neither startup prompt belongs in its ZIP.
+
+## Engineering handoff
+
+The [engineering incubator](项目孵化器/01-INCUBATOR_INSTRUCTIONS.md) supports GPT Project Main, direct Codex work and a light Codex Hub for coordinating several Plans. Follow the [bootstrap contract](项目孵化器/03-BOOTSTRAP_CONTRACT.md) to land project-specific sources in the target project’s `docs/` and point its root `AGENTS.md` there. Users manually sync selected versions to GPT Project and keep formal task Plans outside the target repo. Existing projects retain their active contracts until an upgrade is authorized.
+
 ## ChatGPT customization
 
 `GPT自定义信息/GPT网页版-ChatGPT 自定义指令.txt` defines the default conversational style and judgment principles. `GPT自定义信息/GPT网页版-关于你的更多信息.txt` supplies personal interests and feedback preferences. Copy each file's complete content into the corresponding ChatGPT personalization field to apply an update. Repository changes prepare the text; applying it in ChatGPT is a separate step.

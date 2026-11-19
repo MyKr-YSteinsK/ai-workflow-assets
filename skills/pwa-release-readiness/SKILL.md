@@ -124,4 +124,4 @@ Version classification 与 publish cadence 分离；具体版本、tag/publish�
 
 Optional USER CHECK 仅在有体验价值时附 1–3 个最少步骤，不要求用户现在执行、不等待、不追踪、不反复提醒。它不改变完成状态，也不替代已批准的必要验收；必要人工／真机 Gate 单独按合同处理。
 
-证据合并进主结果；正式 Plan/Handoff 按当前项目／Plan 的 TASK_RESULT 合同及有效历史字段回传，将 PWA 证据放入 Verification & Evidence、Deviations / Limitations 与有价值时的 Optional USER CHECK，不重定义任务状态或另附完整 PWA report。
+PWA 证据与限制合入主回执，有价值时补充可选体验检查。按有效项目／Plan 回传；旧合同要求 TASK_RESULT 时沿用其字段，不另附完整 PWA 报告。

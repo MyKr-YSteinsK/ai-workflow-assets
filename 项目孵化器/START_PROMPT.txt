@@ -11,4 +11,4 @@
 我最看重的项目价值或成功标准（可选）：
 <在这里填写>
 
-不要凭空假定仓库事实、技术可行性或现有功能已经被验证。默认我的开发流程是 ChatGPT Planner + Codex Desktop，常规 Codex 任务优先低额度模型，并尽量保持 GitHub 远端同步。
+请根据项目确定合适的工作入口：保留 GPT Project Main + Codex 交接，也支持 Codex Native 或汇合多个 GPT Plan 的轻量 Codex Hub。交接请说明项目源文件如何落到目标仓库的 docs/，以及新对话从哪里恢复。正式 Plan 由我在项目外管理。分别说明已核实的仓库事实、待调查内容和后续同步步骤。

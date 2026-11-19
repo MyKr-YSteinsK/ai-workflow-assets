@@ -113,7 +113,7 @@ description: 用于实现、修复或验收 Web/移动界面的布局、响应�
 
 ## 9. 最终报告
 
-普通任务按实际需要简洁报告。正式 Plan/Handoff 遵循当前项目／Plan 的 TASK_RESULT 合同及有效历史字段，将专项证据合并进 Verification & Evidence、Deviations / Limitations 与有价值时的 Optional USER CHECK；不另立任务状态定义、不附第二份完整专项报告。
+专项证据与限制合入主回执，有价值时补充可选体验检查。按有效项目／Plan 回传；旧合同要求 TASK_RESULT 时沿用其字段，不另附完整专项报告。
 
 用项目约定的 PASS / FAIL / NOT_RUN / UNAVAILABLE / NOT_APPLICABLE 或等价表述，关联证据来源与实际版本；复用时说明有效范围。以下是可选证据维度，不是每次都要填满的报告模板：
 
