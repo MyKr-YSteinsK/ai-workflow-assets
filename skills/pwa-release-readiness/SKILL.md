@@ -1,6 +1,6 @@
 ---
 name: pwa-release-readiness
-description: 用于修改、排查或验收 Service Worker 注册/激活、PWA 离线/缓存生命周期、已安装客户端升级、更新 version probe、相关 base path/scope/precache、PWA 缓存/升级相关部署身份或明确的 PWA 发布就绪任务；包括旧版不更新、混合版本资源、升级后离线失效或本地数据丢失。未影响这些路径的普通 UI/业务 patch、仅提到 PWA/standalone、非 PWA 的构建 SHA 或部署身份不触发。分开验证部署身份与客户端更新，仅覆盖实际受影响或合同要求的 PWA 边界。
+description: 用于 Service Worker 注册与激活、PWA 离线缓存、已安装客户端升级和相关版本探测、base path、scope 或 precache 的修改、排障与发布验收。区分线上构建身份和客户端升级；单纯布局或非 PWA 部署身份检查不触发。
 ---
 
 # PWA Release Readiness
@@ -124,4 +124,4 @@ Version classification 与 publish cadence 分离；具体版本、tag/publish�
 
 Optional USER CHECK 仅在有体验价值时附 1–3 个最少步骤，不要求用户现在执行、不等待、不追踪、不反复提醒。它不改变完成状态，也不替代已批准的必要验收；必要人工／真机 Gate 单独按合同处理。
 
-PWA 证据与限制合入主回执，有价值时补充可选体验检查。按有效项目／Plan 回传；旧合同要求 TASK_RESULT 时沿用其字段，不另附完整 PWA 报告。
+PWA 证据与限制合入主回执；有价值时补充可选体验检查。

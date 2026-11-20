@@ -1,6 +1,6 @@
 # Learning Project Incubator — Start Prompt
 
-请读取我上传的 **学习项目孵化器 ZIP 内的 01–04 四份 Markdown**。这是包外启动提示。当前任务是孵化，尚未进入正式教学。
+请读取我上传的 **学习项目孵化器 ZIP 内的 01–04 四份 Markdown**。这是包外启动提示。先确认能读取所需正文；如 ZIP 无法打开，请我上传解包后的 Markdown 或补齐缺失内容，再生成 Bootstrap。当前只做孵化。
 
 我的初始学习目标 / 想法：
 

@@ -1,7 +1,7 @@
 ---
 name: study-review-notes
 description: >-
-  Review without editing, or revise, correct, expand and reorganize personal notes on material already studied, read or taught (只读笔记审查、课后复盘、概念辨析、复杂内容补全与实际改写). Support fast recall and reconstruction while preserving personal annotations, existing Q&A and the originating project's naming/language contracts. Prefer over generic document-writing for post-learning notes; unresolved understanding does not exclude use. Do not use for live tutoring, curriculum/bootstrap governance review, general README or paper authoring, or generating a new full course.
+  审查或改写已学内容的个人复盘笔记，包括概念辨析和知识缺口。 帮助回忆并保留个人标注、原有问答及课程命名和语言规则。已学笔记优先使用；实时教学、课程设计和通用报告不适用。
 ---
 
 # Study Review Notes｜已学知识的复盘笔记优化

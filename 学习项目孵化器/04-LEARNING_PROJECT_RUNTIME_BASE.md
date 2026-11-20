@@ -117,33 +117,6 @@ Do not reduce standards because of one mistake.
 
 Use these actions at meaningful decisions. A small course can stay in one Main, make local detours and review meaningful units as needed. Keep resume, progress and project-level change boundaries; do not pre-create extra chats or require a full transition table. Add Support or parallel Main when justified and retain their activation, scope, exit, return and merge rules. If a new topology is needed later, define ownership and handoff before activating it.
 
-### `CONTINUE`
-Continue current task in current chat.
-
-### `LOCAL_DETOUR`
-Repair a small prerequisite or confusion inside current chat.
-
-### `SPAWN_SUPPORT_TRACK`
-A larger, relatively independent prerequisite/support problem blocks the main route.
-
-### `ROLLOVER_SAME_TRACK`
-The route remains sequential, but the current chat has reached a good semantic handoff point or its context is becoming less reliable.
-
-### `INTEGRATE_TRACKS`
-Parallel/support tracks have reached their integration gate and should merge back into Main.
-
-### `STAGE_REVIEW`
-A meaningful stage or knowledge unit benefits from review/assessment.
-
-### `ADVANCE_STAGE`
-Current stage has enough evidence to move forward.
-
-### `REPLAN`
-Goals, constraints, evidence, or project structure materially changed.
-
-### `COMPLETE`
-Confirmed target capability and final requirements are substantially met; perform final consolidation/acceptance.
-
 ### State transitions, scope and ownership
 
 Use this decision discipline when a transition matters:
@@ -233,7 +206,7 @@ Create or update it when persistent current-state handoff becomes useful, especi
 
 The **single designated Main / merge owner** in the topology is responsible for integrating the global checkpoint. Parallel Main tracks must identify this responsibility before parallel work begins. Support, Practice, Review, Q&A, and other tracks return scoped results, evidence, fragile points and return points instead of replacing global state with their snapshots.
 
-Before merging, the designated Main checks the **latest available valid checkpoint**, reconciles newer results from other tracks and preserves unrelated fields, confirmed facts, unresolved gaps and return points. If the latest global state is unavailable or conflicting, provide the proposed local delta and a human-readable integration instruction; do not claim the global Checkpoint was updated. Never infer that a written file was actually installed into ChatGPT Project Files when that action has not occurred.
+Before merging, the designated Main confirms the active Checkpoint from its actual contents and, if multiple versions exist, the user-designated revision or known merge base. Reconcile newer results and keep unrelated fields, unresolved gaps and return points. If the active source is missing or ambiguous, return the local delta and integration instructions without updating global state. When a user uploads a replacement, have a new chat confirm the current position and next entry from the intended file before the user retires the old source. Report prepared and actually applied changes separately.
 
 Do not update it every turn.
 
@@ -304,7 +277,7 @@ Do not ask the user to invent the handoff.
 
 If a new chat is needed, generate the entry prompt. When a checkpoint update is needed, the designated Main merges it under the Checkpoint Contract; other tracks provide local results for that Main. Update Project state directly only within this responsibility and with current state available; otherwise provide the appropriate result/file and explicit handoff or replacement instructions.
 
-For a Main-Track rollover, the entry prompt should instruct the new chat to read `LEARNING_BRIEF`, `LEARNING_PLAN`, and `CURRENT_LEARNING_CHECKPOINT`, avoid repeating project discovery, briefly confirm the current position / stable mastery / fragile points / next entry point, and continue directly.
+For a Main-Track rollover, the entry prompt should instruct the new chat to read `LEARNING_BRIEF`, `LEARNING_PLAN`, and the verified current `CURRENT_LEARNING_CHECKPOINT` if one exists, avoid repeating project discovery, briefly confirm the current position / stable mastery / fragile points / next entry point, and continue directly.
 
 For a Support Track, the entry prompt should carry or point to its `Purpose`, `Entry Condition`, `Allowed Scope`, `Target Capability`, `Exit Condition`, and `Return Point`, so the support chat cannot expand into an unrelated curriculum.
 

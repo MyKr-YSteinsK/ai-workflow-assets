@@ -16,7 +16,7 @@ Long-term home for reusable AI workflow instructions, project bootstrap material
 
 Bundle source Markdown uses LF line endings through `.gitattributes` so Git checkouts preserve the bytes used for ZIP comparison.
 
-The engineering ZIP contains source files `01`–`06`; the learning ZIP contains `01`–`04`. Copy the corresponding startup prompt separately; neither startup prompt belongs in its ZIP.
+The engineering ZIP contains source files `01`–`06`; the learning ZIP contains `01`–`04`. Copy the corresponding startup prompt separately. Confirm the chat can read the required Markdown inside the ZIP. If it cannot unpack the ZIP or read a required file, extract it locally and upload the Markdown files or provide the missing text before generating a Bootstrap.
 
 ## Engineering handoff
 
@@ -28,18 +28,27 @@ Upload the learning ZIP and copy the [startup prompt](学习项目孵化器/05-S
 
 ## GPT Project Skill routing
 
-[MyKr-YSteinsK/ai-workflow-assets](https://github.com/MyKr-YSteinsK/ai-workflow-assets) is the source of record. Codex uses the same Skill files through its native installation paths; a GPT chat reading the files uses them as reference. Use a native Skill or plugin only if that capability is actually available. A script needs a real execution tool and task authorization.
+[MyKr-YSteinsK/ai-workflow-assets](https://github.com/MyKr-YSteinsK/ai-workflow-assets) is the source of record. Codex uses the same Skill files through its native installation paths; a GPT chat reading the files uses them as reference. Use a native Skill or plugin when the host provides it. A script needs an execution tool and task authorization.
 
 | Task | Read on demand |
 | --- | --- |
 | Create, revise or review a substantive technical document, report or paper | [`skills/document-writing/SKILL.md`](skills/document-writing/SKILL.md) |
+| Create or modify an editable PPTX | Use the available presentation tools and read [PPTX delivery checks](skills/document-writing/references/pptx-delivery-checks.md) directly, even for slide-only work. |
 | Review or improve personal notes on material already studied | [`skills/study-review-notes/SKILL.md`](skills/study-review-notes/SKILL.md), with the course's sources, naming and existing Q&A rules |
 
 Paste or adapt this short route in a Project's instructions if the work recurs. Omit the unused branch:
 
-> 专业文档实质编写、修订或审查时，按需读取 `MyKr-YSteinsK/ai-workflow-assets` 的 `skills/document-writing/SKILL.md`；复盘已学个人笔记优先读 `skills/study-review-notes/SKILL.md`，并采用本课程的来源、命名与问答约定。当前对话能访问 GitHub 时读取正文，必要时再读关联 Reference，并核对实际读取的路径、版本（可见时）和一条适用规则。读不到时改用 Project 中标明原路径与版本的上传快照；仍不可得时说明缺口，依据实际任务和可读材料继续。普通问答、正在进行的教学和常规代码修复直接处理。
+> 专业文档实质编写、修订或审查时，按需读取 `MyKr-YSteinsK/ai-workflow-assets` 的 `skills/document-writing/SKILL.md`；制作或修改可编辑 PPTX 时用当前可用的演示工具，直接读 `skills/document-writing/references/pptx-delivery-checks.md`；复盘已学个人笔记优先读 `skills/study-review-notes/SKILL.md`，并采用本课程的来源、命名与问答约定。当前对话能访问 GitHub 时读取正文，必要时再读关联 Reference，并核对实际读取的路径、版本（可见时）和一条适用规则。读不到时改用 Project 中标明原路径与版本的上传快照；仍不可得时说明缺口，依据实际任务和可读材料继续。普通问答、正在进行的教学和常规代码修复直接处理。
 
-GitHub access varies by account, workspace and chat surface. A link or search result alone does not confirm that the body was read. For repeatable results, use a commit-pinned file or a labeled snapshot. When updating manually, copy the exact Skill text and only the referenced files needed; upload them with distinct names (e.g. `document-writing.SKILL.md`) and record the original path and commit in the Project setup or source description. Replace stale snapshots yourself. [Project instructions override global custom instructions](https://help.openai.com/en/articles/10169521-projects-in-chatgpt) inside that Project; neither instructions nor uploads update when this repository changes. See [GitHub access in ChatGPT](https://help.openai.com/en/articles/11145903-connecting-github-to-chatgpt) and [native Skills](https://developers.openai.com/plugins/build/skills).
+GitHub access varies by account, workspace and chat surface. A link or search result alone does not confirm that the body was read. For repeatable results, use a commit-pinned file or a labeled snapshot. When updating manually, copy the exact Skill text and only the referenced files needed; upload them with distinct names (e.g. `document-writing.SKILL.md`) and record the original path and commit in the Project setup or source description. When updating a snapshot, identify the active revision, confirm a new chat reads its contents, then retire the stale source. A same-name upload can leave both versions present. [Project instructions override global custom instructions](https://help.openai.com/en/articles/10169521-projects-in-chatgpt) inside that Project; neither instructions nor uploads update when this repository changes. See [GitHub access in ChatGPT](https://help.openai.com/en/articles/11145903-connecting-github-to-chatgpt) and [native Skills](https://developers.openai.com/plugins/build/skills).
+
+## Update local Codex assets
+
+Select a repository commit first. Compare the source with the copies in actual use: global AGENTS under the active Codex home (normally `~/.codex/AGENTS.md`, subject to an override), and the six Skill folders normally under `~/.agents/skills/`. Preserve local edits and update each Skill with its `SKILL.md` and required References together. This repository’s `skills/` directory is the maintenance source. Verify the updated files against the chosen commit and check which paths a new Codex session loads. See [AGENTS discovery](https://learn.chatgpt.com/docs/agent-configuration/agents-md) and [Skill discovery](https://learn.chatgpt.com/docs/build-skills).
+
+## Project presentations
+
+Save final PPT/PPTX project materials in the target project’s `docs/PPT/` by default. Treat them as public-ready unless the user or project specifies otherwise. Check for sensitive or restricted content before sharing; publishing still follows the project’s authorization. Keep partial exports and previews in the existing temporary area.
 
 ## ChatGPT customization
 

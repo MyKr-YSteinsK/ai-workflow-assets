@@ -47,7 +47,7 @@ Briefly explain:
 ### Setup
 Tell the user to:
 1. create a ChatGPT Project for new work, or use the designated existing Project for an upgrade;
-2. upload `00-START_HERE.md`, `01-LEARNING_BRIEF.md`, and `02-LEARNING_PLAN.md` as Project Files. On upgrade, replace only the approved versions, preserve other valid files, and carry forward the latest valid checkpoint when real state exists. Resolve conflicting snapshots before resuming;
+2. upload `00-START_HERE.md`, `01-LEARNING_BRIEF.md`, and `02-LEARNING_PLAN.md` as Project Files. On upgrade, replace only the approved versions, preserve other valid files, and carry forward the latest valid checkpoint when real state exists. Identify the current revision in the handoff and confirm a new chat reads its actual content before retiring the old source. A same-name upload can leave both sources present; have the user remove or explicitly mark the old one superseded after verification. If the current version cannot be identified, preserve the old source and postpone only the affected state merge;
 3. copy the **content** of `03-PROJECT_INSTRUCTIONS.md` into the Project's Project Instructions;
 4. create the first learning chat;
 5. send the included first-chat startup prompt.
@@ -150,7 +150,7 @@ Purpose: executable runtime behavior for the finished ChatGPT Learning Project.
 Compile a compact runtime contract from `04-LEARNING_PROJECT_RUNTIME_BASE.md`; the Base is a reference for behavior, not text to copy wholesale. The generated Instructions have a **hard limit of 8000 UTF-16 code units** for the exact pasteable text. This is a binding incubator engineering rule, independent of any claim about changing product UI limits.
 
 It must:
-- contain applicable universal runtime rules;
+- preserve source authority, scope-change boundaries and mastery checks based on demonstrated reasoning or transfer;
 - preserve initial roadmap, proactive knowledge-unit recaps with upcoming/remaining scope, and Chinese-first bilingual terminology behavior from the Runtime Base (subject to explicit user language preferences); keep these as compact execution rules, not copied roadmaps or glossaries;
 - compile the substantive-example standard and full interpreted numerical computations for consequential complex formulas into the Teaching Contract; preserve the option to use a tiny notation demonstration without ending at a trivial example;
 - compile concise rules from the Runtime Base's Conversational Voice and Calibrated Feedback section: natural subject-appropriate expression, clearly labeled exploration, independent answer evaluation, proportionate specific acknowledgment, consequential correction, and warmth without inflated correctness or mastery; keep illustrative examples optional;
@@ -169,13 +169,14 @@ It must:
 
 ### Character Budget and Release Gate
 
-Apply to every final generation, Upgrade, and later Instructions replacement:
+Apply separately to each candidate, final package, and later Instructions replacement:
 1. Measure the exact complete text to be pasted, including headings, Markdown, whitespace, newlines and any preamble inside the file. Do not count tokens or UTF-8 bytes, estimate by eye, or strip/normalize text only for measurement. Use UTF-16 code units as a conservative character count (supplementary characters count as two).
-2. Run an actual counter on the final saved content, for example with Python:
+2. Run an actual counter on the specific file being delivered. For example, pass that file’s path as the first argument to the Python snippet below.
 
 ```python
 from pathlib import Path
-text = Path("LEARNING_BOOTSTRAP/03-PROJECT_INSTRUCTIONS.md").read_bytes().decode("utf-8")
+from sys import argv
+text = Path(argv[1]).read_bytes().decode("utf-8")
 count = len(text.encode("utf-16-le")) // 2
 print(f"PROJECT_INSTRUCTIONS_CHAR_COUNT={count}/8000")
 if count > 8000:
@@ -244,16 +245,14 @@ The filename contract constrains naming only. It must never impose a universal n
 Before packaging, verify the applicable rules below:
 - the approved release path covers this package and all material changes; in the candidate path, final release occurs after independent consideration of the report or an explicit waiver;
 - when generated, the candidate contains a directly copyable, project-specific read-only `04-CODEX_REVIEW_PROMPT.md`; every final package omits review-only materials;
-- complex-formula worked-example requirements and sufficiently substantive scenarios survive compilation into Project Instructions; full meaningful intermediate calculations, domain interpretation, and distinction between illustrative and empirical numbers are preserved;
-- Instructions retain natural expression and calibrated learner feedback: partially correct answers receive specific proportionate acknowledgment and consequential correction, and praise or encouragement does not substitute for demonstrated mastery;
+- the teaching rules in §4 survive compilation: substantive examples and interpreted calculations, natural expression and calibrated feedback, JIT, roadmap and recaps, mastery evidence, and bilingual terminology;
 - the exact saved `03-PROJECT_INSTRUCTIONS.md` in each release has actually been measured at <= 8000 UTF-16 code units under the Character Budget and Release Gate; the reported count matches that release’s delivered text;
 - Instructions preserve the essential runtime contract without duplicating detailed Brief/Plan content, and all referenced sections exist in supplied Project Files;
 - all files agree on project identity;
 - target capabilities match Core Scope;
 - Non-goals do not conflict with stages;
 - hard constraints are represented;
-- roadmap and prerequisite graph are coherent; JIT prerequisite teaching remains available despite cross-route overlap, with adaptive depth and existing scope/state-ownership boundaries preserved;
-- Instructions retain roadmap-before-teaching, proactive recaps within long stages with next/remaining scope, and bilingual terminology rules; compression has not reduced them to optional suggestions or first-use-only translations;
+- the roadmap and prerequisite graph are coherent, including JIT across overlapping routes;
 - applicable orchestration decisions preserve their transitions and authority without forcing every project to include all nine labels; Local / Stage / Project authority remains distinct;
 - conversation topology has no conflicting mainline ownership and names the Main responsible for merging the global checkpoint, including with parallel Main tracks; Support, Q&A, Practice and Review do not obtain unauthorized mainline or Checkpoint write permission;
 - retained Upgrade state matches the confirmed design and next entry point; explicitly discarded state is absent;
@@ -262,6 +261,5 @@ Before packaging, verify the applicable rules below:
 - Runtime does not depend on unavailable templates;
 - Notes rules appear only when enabled; when enabled, the exact `NN-笔记主题_一级目录_课程名.md` pattern and stable confirmed category/course name, bilingual terminology, and high-value transfer Q&A with reference answers remain in force;
 - rejected alternatives are absent;
-- no stale reference to the old Custom GPT remains;
 - no file requires the Incubator conversation to be remembered;
 - the **final** `00-START_HERE.md` explains how to start or resume without the incubation chat; a candidate's startup file (if generated) clearly prevents premature installation.
