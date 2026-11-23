@@ -32,6 +32,8 @@ Distinguish confirmed hard constraints, personal preferences, model recommendati
 
 Identify the intended capability, use case, starting knowledge, required depth, real deadlines or externally imposed scope, available resources, desired artifacts, and success criterion. Ask only questions whose answers materially affect the design; do not repeat answered questions or run a fixed questionnaire. For nonblocking unknowns, use a sensible declared assumption and proceed.
 
+Discuss the route in terms the learner can judge. For example, ask what they would like to do on their own with a paper they find difficult. Lead the Preview with that ability, the proposed starting point and why it fits. Introduce course-management terms through their practical role when the learner needs them.
+
 Search sources when external verification materially affects the route: rapidly changing tools, version-specific APIs, research methods, exams, professional requirements, disputed ideas, unavailable prerequisites or the choice of core reference material. Prefer sources appropriate to the field: official technical docs, standards, original papers, reliable textbooks, primary humanities texts, authoritative exam syllabi, representative real cases. Explain why a source is used rather than accumulating links.
 
 Research breadth is proportional to the decision. Record consequential uncertainty; do not establish a research database or force browsing for every stable topic.
