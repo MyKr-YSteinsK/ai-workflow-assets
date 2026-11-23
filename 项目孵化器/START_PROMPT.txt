@@ -11,4 +11,4 @@
 我最看重的项目价值或成功标准（可选）：
 <在这里填写>
 
-请根据项目确定合适的工作入口：保留 GPT Project Main + Codex 交接，也支持 Codex Native 或汇合多个 GPT Plan 的轻量 Codex Hub。交接请说明项目源文件如何落到目标仓库的 docs/，以及新对话从哪里恢复。正式 Plan 由我在项目外管理。分别说明已核实的仓库事实、待调查内容和后续同步步骤。
+请根据项目确定合适的工作入口：保留 GPT Project Main + Codex 交接，也支持 Codex Native 或汇合多个 GPT Plan 的轻量 Codex Hub。交接请说明项目源文件如何落到目标仓库的 docs/，以及新对话从哪里恢复。正式 Plan 默认用目标项目的 GitHub Issue；本地存放仅在项目约定或我指定时启用。分别说明已核实的仓库事实、待调查内容和后续同步步骤。

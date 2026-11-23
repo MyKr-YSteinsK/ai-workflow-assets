@@ -20,7 +20,9 @@ The engineering ZIP contains source files `01`–`06`; the learning ZIP contains
 
 ## Engineering handoff
 
-The [engineering incubator](项目孵化器/01-INCUBATOR_INSTRUCTIONS.md) supports GPT Project Main, direct Codex work and a light Codex Hub for coordinating several Plans. Follow the [bootstrap contract](项目孵化器/03-BOOTSTRAP_CONTRACT.md) to land project-specific sources in the target project’s `docs/` and point its root `AGENTS.md` there. Users manually sync selected versions to GPT Project and keep formal task Plans outside the target repo. Existing projects retain their active contracts until an upgrade is authorized.
+The [engineering incubator](项目孵化器/01-INCUBATOR_INSTRUCTIONS.md) supports GPT Project Main, direct Codex work and a light Codex Hub for coordinating several Plans. Follow the [bootstrap contract](项目孵化器/03-BOOTSTRAP_CONTRACT.md) to land project-specific sources in the target project’s `docs/` and point its root `AGENTS.md` there. Users manually sync the project-specific instructions to GPT Project. Existing projects retain their active contracts until an upgrade is authorized.
+
+For formal GPT → Codex handoffs, GPT Main creates an authorized Issue in the target repository with the full Markdown Plan and returns a short prompt. Example: “在 `<workspace>` 修复导出错误。先读 `<Issue URL>` 的完整正文，保留现有 API，完成相关验证。” For simple tasks, send a short prompt directly or continue the current Codex chat. Use readable Markdown or an authorized private source when GitHub is unavailable or the Plan contains restricted information. Save a local copy only at an agreed or user-specified location outside the repository; by default, keep the Plan out of Git history. See the [Plan spec](项目孵化器/05-CODEX_PLAN_SPEC.md).
 
 ## Learning project setup
 
