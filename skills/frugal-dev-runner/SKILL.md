@@ -1,6 +1,6 @@
 ---
 name: frugal-dev-runner
-description: 用于软件实现、bug/refactor/测试修复、repository bootstrap，以及 Agent/ML/研究工程中已授权的实现、实验运行和验收。提供风险驱动验证、证据复用、CI/环境排障及异步操作收口。不用于一般知识讨论或纯研究综述。
+description: 用于开发规划、软件实现、bug/refactor/测试修复、repository bootstrap、关键工程审查，以及 Agent/ML/研究工程中已授权的实现、实验运行和验收。提供风险驱动验证、证据复用、CI/环境排障及异步操作收口。不用于一般知识讨论或纯研究综述。
 ---
 
 # Frugal Dev Runner
@@ -11,6 +11,7 @@ description: 用于软件实现、bug/refactor/测试修复、repository bootstr
 
 核对目标 workspace/repo、分支、用户改动和实际适用的 AGENTS。工作输入可来自直接对话、对话内规划或有效 Plan；核对任务身份、基线、实际权限与验收，沿用旧项目有效合同及编号。先读相关目标和状态，按需查运行方法，不扫描整个仓库。
 
+- 方向已足够明确且即将进入下一轮 Plan 制定、实施或关键审查时，按[开发对话的模型推荐](references/model-recommendation.md)判断是否在当前回复末尾建议档位。
 - 已建档的 canonical 环境优先复用，包括新工作树；核对依赖锁与命令语义，避免裸 `uv` 或包管理器隐式同步或新建第二套环境。GPU 占用、磁盘、后台作业等按本次任务增量核实。运行前确认工作目录及默认输出、临时位置和实际写入边界。
 - 新项目接入、恢复入口或环境档案有缺口时，按需查 [仓库接入参考](references/repository-bootstrap-contracts.md)。正式交接或 Hub 续接确需细节时，查 [任务交接参考](references/handoff-contracts.md)；普通任务无需读取。
 - 实际启动、接管或续跑预计耗时较长的实验，或验证中断恢复时，按需查 [实验运行与续跑](references/experiment-run-recovery.md)。普通快速检查与方案讨论无需加载。
