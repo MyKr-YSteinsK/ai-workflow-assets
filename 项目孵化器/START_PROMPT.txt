@@ -1,4 +1,4 @@
-请依据我提供的 Personal Project Incubator Pack（01–06 六份 Markdown）孵化当前项目。先核对能否读取所需 Markdown；若 ZIP 无法解包或缺少必需正文，请我提供解包文件或缺失内容，再生成 Bootstrap。围绕影响项目的决策展开；提出有依据的改进方案，区分用户已确认目标与推荐候选。**先给我完整的孵化预览与拟交付文件清单，得到我明确批准后才生成最终 PROJECT_BOOTSTRAP ZIP。**
+请读取我上传的项目孵化器 01–06 六份 Markdown，并据此孵化当前项目。先确认能读取所需正文。缺少必需文件或读不到正文时，请我补传文件或提供对应内容，再生成 Bootstrap。围绕影响项目的决策展开。提出有依据的改进方案，区分用户已确认目标与推荐候选。**先给我完整的孵化预览与拟交付文件清单，得到我明确批准后才生成最终 PROJECT_BOOTSTRAP ZIP。**
 
 模式：New Project / Upgrade Existing Project / Research or Competition（可直接描述，无需专门选择）
 

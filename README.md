@@ -10,13 +10,12 @@ Long-term home for reusable AI workflow instructions, project bootstrap material
 - `GPT自定义信息/` — ChatGPT customization text.
 - `skills/` — reusable skills and their supporting references.
 
-## Upload bundle maintenance
+## Start an incubator chat
 
-`项目孵化器/项目孵化器.zip` and `学习项目孵化器/学习项目孵化器.zip` are upload-ready packages for attaching to GPT conversations when starting a task. Keep them alongside their editable source files. Whenever a file included in a bundle changes, regenerate the corresponding ZIP in the same change and verify that every bundled file matches its current source before committing.
+- For an engineering project, upload the six Markdown files `01`–`06` from `项目孵化器/` and paste the startup prompt text. [Engineering startup prompt](项目孵化器/START_PROMPT.txt)
+- For a learning project, upload the four Markdown files `01`–`04` from `学习项目孵化器/` and paste the startup prompt text. [Learning startup prompt](学习项目孵化器/05-START_PROMPT.md)
 
-Bundle source Markdown uses LF line endings through `.gitattributes` so Git checkouts preserve the bytes used for ZIP comparison.
-
-The engineering ZIP contains source files `01`–`06`; the learning ZIP contains `01`–`04`. Copy the corresponding startup prompt separately. Confirm the chat can read the required Markdown inside the ZIP. If it cannot unpack the ZIP or read a required file, extract it locally and upload the Markdown files or provide the missing text before generating a Bootstrap.
+Confirm the chat can read the required Markdown. Supply any missing file or its full text before generating a Bootstrap.
 
 ## Engineering handoff
 
@@ -26,7 +25,7 @@ For formal GPT → Codex handoffs, GPT Main creates an authorized Issue in the t
 
 ## Learning project setup
 
-Upload the learning ZIP and copy the [startup prompt](学习项目孵化器/05-START_PROMPT.md) separately. Approve the Preview for direct delivery, or choose one focused read-only Codex review when it would change a consequential design decision. Apply the final files using `00-START_HERE.md`. For an existing course, replace only approved files and instructions; keep its latest valid Checkpoint, active tracks and note names. See the [learning Bootstrap contract](学习项目孵化器/03-BOOTSTRAP_CONTRACT.md).
+Approve the Preview for direct delivery, or choose one focused read-only Codex review when it would change a consequential design decision. Apply the final files using `00-START_HERE.md`. For an existing course, replace only approved files and instructions. Keep its latest valid Checkpoint, active tracks and note names. See the [learning Bootstrap contract](学习项目孵化器/03-BOOTSTRAP_CONTRACT.md).
 
 ## GPT Project Skill routing
 
